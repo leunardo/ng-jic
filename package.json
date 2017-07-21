@@ -1,0 +1,20 @@
+{
+  "name": "ng-jic",
+  "version": "1.0.0",
+  "description": "angular module for image compression based on J-I-C https://github.com/brunobar79/J-I-C",
+  "main": "src/ng-jic.js",
+  "directories": {
+    "example": "example"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leunardo/ng-jic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leunardo/ng-jic/issues"
+  },
+  "homepage": "https://github.com/leunardo/ng-jic#readme"
+}
