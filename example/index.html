@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ng jic example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body ng-app="example">
+        <section ng-controller="exampleController">
+            <form ng-submit="uploadImg()">
+                <input type="file" ng-model="image">
+                <button type="submit">Upload</button>
+            </form>
+            
+            <img id='uncompressed' src="" alt="Umcompressed image" title="Umcompressed image">
+            <img id='compressed' src="" alt="Compressed image" title="Compressed image">
+
+            <ul>
+                <li>Quality: 20%</li>
+                <li>uncompressed size: {{size.uncompressed}} kb</li> 
+                <li>compressed size: {{size.compressed}} kb</li> 
+                <li> {{100 - (size.compressed/size.uncompressed * 100) || 0}}% less</li>
+            </ul>
+        </section>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> 
+    <script src="../src/ng-jic.js"></script> 
+    <script src="example.js"></script> 
+    
+</html>
