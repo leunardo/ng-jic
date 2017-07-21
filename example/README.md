@@ -1,5 +1,7 @@
 ## ng-jic example
 
+![image with compressed and uncompressed image to comparison](https://github.com/leunardo/ng-jic/blob/master/example/example.PNG)
+
 In this example I basically made a html with a input file which you can
 select an image and it will show you two images:
 
